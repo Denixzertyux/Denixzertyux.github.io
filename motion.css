@@ -1,0 +1,22 @@
+.cursor-light{position:fixed;left:-240px;top:-240px;width:480px;height:480px;pointer-events:none;z-index:1;opacity:0;transition:opacity .4s;background:radial-gradient(circle,#68e2dd0c,transparent 68%)}
+.cursor-light.visible{opacity:1}
+.hero-stats{display:flex;flex-wrap:wrap;gap:24px;margin-top:28px;font-size:.75rem;color:var(--muted)}
+.hero-stats span{display:flex;align-items:center;gap:8px}.hero-stats strong{color:var(--cyan);font-size:1.15rem;font-variant-numeric:tabular-nums}
+.data-pipeline{margin-top:32px;padding:22px 24px;border:1px solid var(--line);border-radius:6px;background:#0c1b2ad9}
+.data-pipeline>p{font-size:.68rem;letter-spacing:.12em;margin:0 0 18px;color:var(--muted)}
+.pipeline-track{display:flex;align-items:center;gap:10px;max-width:800px}
+.pipeline-node{border:1px solid #315161;border-radius:4px;padding:12px 16px;min-width:0;text-align:center;color:var(--text);font-size:.8rem;background:#102333}
+.pipeline-node small{display:block;color:var(--cyan);font-size:.6rem;letter-spacing:.08em;margin-bottom:5px}
+.connector{position:relative;height:1px;background:#315161;flex:1;min-width:12px}
+.connector b{position:absolute;inset:-1px 0;height:3px;background:var(--cyan);box-shadow:0 0 10px #68e2dd75;transform:scaleX(0)}
+.project-card{transition:border-color .25s,box-shadow .25s;}
+.project-card:hover,.project-card:focus-within{border-color:#4b999b;box-shadow:0 8px 30px #0002}
+.project-flow{display:flex;flex-wrap:wrap;gap:8px 5px;list-style:none;padding:16px 0 0;margin:0 0 18px;border-top:1px solid var(--line)}
+.project-flow li{font-size:.65rem;color:var(--muted);transition:color .25s;line-height:1.7}
+.project-flow li+li:before{content:'→';margin-right:5px;color:#48717d}
+.project-card:hover .project-flow li,.project-card:focus-within .project-flow li{color:var(--cyan)}
+.timeline{position:relative;--timeline-progress:0%}
+.timeline:before{content:'';position:absolute;left:-15px;top:0;width:2px;height:var(--timeline-progress);background:var(--cyan);opacity:.45}
+@media(max-width:760px){.data-pipeline{padding:20px 14px}.pipeline-track{gap:5px}.pipeline-node{padding:10px 5px;font-size:.65rem;flex:1}.pipeline-node small{font-size:.5rem}.connector{min-width:5px;flex:.3}.hero-stats{gap:16px}.timeline:before{left:-10px}}
+@media(pointer:coarse),(prefers-reduced-motion:reduce){.cursor-light{display:none}}
+@media(prefers-reduced-motion:reduce){.project-card,.project-flow li{transition:none}.timeline:before{height:100%}}
