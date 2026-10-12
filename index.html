@@ -3,258 +3,248 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f3f0e8" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#13120f" media="(prefers-color-scheme: dark)">
-  <meta name="description" content="Denis-Cristian Nastase — Python and data engineering portfolio. Data pipelines, explainable AI, analytics, and full-stack applications.">
-  <title>Denis Nastase — Python &amp; Data Engineering</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='4' fill='%2316140f'/%3E%3Ctext x='20' y='28' font-family='Georgia,serif' font-style='italic' font-size='24' fill='%23f3f0e8' text-anchor='middle'%3Ed%3C/text%3E%3Ccircle cx='31' cy='27' r='2.6' fill='%23e04a24'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#08090a">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Denis-Cristian Nastase — Python and data engineering portfolio. Data pipelines, machine learning, SQL analysis and full-stack applications.">
+  <title>Denis Nastase — Data Engineering</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2308090a'/%3E%3Cpath d='M9 9h6.5a7 7 0 0 1 0 14H9z' fill='none' stroke='%23f7f8f8' stroke-width='2.4'/%3E%3Ccircle cx='23.5' cy='22' r='2' fill='%237c86e8'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="masthead">
-    <a class="mark" href="#top" aria-label="Denis Nastase, back to top"><i>d</i>n<b aria-hidden="true">.</b></a>
-    <p class="coords mono" aria-hidden="true">44.43° N, 26.10° E</p>
-    <nav aria-label="Main navigation">
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="cv mono" href="assets/Denis-Nastase-CV.pdf" download>CV.pdf <span aria-hidden="true">↓</span></a>
-  </header>
+  <div class="wrap">
+    <header class="top">
+      <a class="name" href="#main">Denis Nastase</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn ghost small mono" href="assets/Denis-Nastase-CV.pdf" download>CV.pdf</a>
+    </header>
 
-  <main id="main">
-    <section id="top" class="hero frame">
-      <p class="kicker mono">Python &amp; data · Bucharest, Romania</p>
-      <h1 class="name">Denis-<em>Cristian</em><br>Nastase<span class="dot" aria-hidden="true">.</span></h1>
-
-      <div class="hero-grid">
-        <dl class="now mono">
-          <div><dt>Now</dt><dd>Data Engineer Intern, Endava</dd></div>
-          <div><dt>Study</dt><dd>Computer Science, POLITEHNICA Bucharest</dd></div>
-          <div><dt>Open to</dt><dd>Python &amp; data roles</dd></div>
-        </dl>
-        <p class="thesis">What draws me to data is the chance to think critically: to examine the evidence, ask better questions, and reach a conclusion <em>I can explain.</em></p>
-      </div>
-
-      <figure class="fig-pipeline">
-        <svg viewBox="0 0 1000 120" role="img" aria-labelledby="fig1-title">
-          <title id="fig1-title">A data workflow in five steps: source, ETL, database, model, insight.</title>
-          <path id="flow" class="flow-line" d="M20 70 C 140 70, 160 30, 250 40 S 400 95, 500 70 S 650 25, 750 45 S 900 85, 980 60" />
-          <g class="flow-nodes">
-            <circle cx="20" cy="70" r="5"/><circle cx="250" cy="40" r="5"/><circle cx="500" cy="70" r="5"/><circle cx="750" cy="45" r="5"/><circle cx="980" cy="60" r="7" class="end"/>
-          </g>
-          <g class="flow-labels mono" aria-hidden="true">
-            <text x="20" y="100">01 source</text><text x="250" y="20" text-anchor="middle">02 etl</text><text x="500" y="100" text-anchor="middle">03 database</text><text x="750" y="20" text-anchor="middle">04 model</text><text x="980" y="100" text-anchor="end">05 insight</text>
-          </g>
-          <circle class="packet" r="4"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto"><mpath href="#flow"/></animateMotion></circle>
-        </svg>
-        <p class="flow-steps mono" aria-hidden="true">source → etl → database → model → insight</p>
-        <figcaption class="mono"><span>Fig. 1</span> The shape most of my projects take, from raw source to an insight someone can act on.</figcaption>
-      </figure>
-    </section>
-
-    <section id="work" class="frame section" aria-labelledby="work-title">
-      <header class="section-head">
-        <p class="mono label">§ 1</p>
-        <h2 id="work-title">Selected work</h2>
-        <p class="aside">Ten projects across data engineering, data science, analysis and full-stack. One I’d point you to first.</p>
-      </header>
-
-      <article class="case">
-        <div class="case-text">
-          <p class="mono label">Case study · Data science</p>
-          <h3>Explainable AI for pneumonia detection</h3>
-          <p>A chest X-ray classification project comparing three deep learning models, with Grad-CAM visualizations to explore which image regions influence their predictions. A FastAPI service connects the models to a Django interface.</p>
-          <ul class="stack mono" aria-label="Technologies"><li>Python</li><li>TensorFlow</li><li>Grad-CAM</li><li>FastAPI</li><li>Django</li></ul>
-          <a class="link" href="https://github.com/Denixzertyux/ExplainableAIPneumoniaDetection" target="_blank" rel="noopener noreferrer">Read the code <span aria-hidden="true">↗</span></a>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Data pipelines, models, <span>and the apps around them.</span></h1>
+        <p class="lead">I’m Denis, a Computer Science student at POLITEHNICA Bucharest and a Data Engineer Intern at Endava. I work mostly in Python and SQL, and build full-stack tools with Spring Boot and Angular.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">View work</a>
+          <a class="btn ghost" href="mailto:nastasedeniscristian45@gmail.com">Get in touch</a>
         </div>
-        <div class="case-side">
-          <blockquote>“The project I’m most proud of.”</blockquote>
-          <table class="models">
-            <caption class="mono">Models compared</caption>
-            <tbody>
-              <tr><th scope="row" class="mono">a</th><td>EfficientNetB0</td></tr>
-              <tr><th scope="row" class="mono">b</th><td>DenseNet121</td></tr>
-              <tr><th scope="row" class="mono">c</th><td>ResNet50</td></tr>
-            </tbody>
-          </table>
-          <p class="note mono">→ compare predictions, inspect with Grad-CAM. An academic exploration of model behavior.</p>
-        </div>
-      </article>
+      </section>
 
-      <div class="index">
-        <h3 class="group mono">Data engineering</h3>
-        <article class="row">
-          <span class="no mono">01</span>
-          <div class="row-main">
-            <h4><a href="https://github.com/Denixzertyux/LogosScrapingAndClassifying" target="_blank" rel="noopener noreferrer">Logo similarity pipeline <span aria-hidden="true">↗</span></a></h4>
+      <section id="work" class="panel projects" aria-labelledby="work-title">
+        <div class="panel-head">
+          <h2 id="work-title" class="mono">Projects</h2>
+          <span class="mono dim">10</span>
+          <span class="mono dim hint">Select a project to expand it</span>
+        </div>
+
+        <details class="item featured" open>
+          <summary>
+            <span class="id mono">DS-01</span>
+            <span class="title">Explainable AI for pneumonia detection</span>
+            <span class="tags mono"><span>TensorFlow</span><span>Grad-CAM</span></span>
+          </summary>
+          <div class="body">
+            <p>A chest X-ray classification project comparing EfficientNetB0, DenseNet121 and ResNet50, with Grad-CAM visualizations to explore which image regions influence each prediction. A FastAPI service connects the models to a Django interface. The project I’m most proud of.</p>
+            <p class="flow mono">X-ray → TensorFlow → Grad-CAM → FastAPI → Django</p>
+            <a class="link" href="https://github.com/Denixzertyux/ExplainableAIPneumoniaDetection" target="_blank" rel="noopener noreferrer">Repository ↗</a>
+          </div>
+        </details>
+
+        <p class="group mono">Data engineering</p>
+        <details class="item">
+          <summary>
+            <span class="id mono">DE-01</span>
+            <span class="title">Logo similarity pipeline</span>
+            <span class="tags mono"><span>Selenium</span><span>MySQL</span><span>Faiss</span></span>
+          </summary>
+          <div class="body">
             <p>An end-to-end Python pipeline that collects company logos through a multi-stage scraper, stores them in MySQL, and groups them by visual similarity. EfficientNetB0 embeddings, PCA and Faiss turn images into searchable feature vectors; results export to CSV and an HTML report.</p>
+            <p class="flow mono">scraping → MySQL → EfficientNet → PCA → Faiss</p>
+            <a class="link" href="https://github.com/Denixzertyux/LogosScrapingAndClassifying" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
-          <p class="flow mono">scraping → MySQL → EfficientNet → PCA → Faiss</p>
-        </article>
-        <article class="row">
-          <span class="no mono">02</span>
-          <div class="row-main">
-            <h4><a href="https://github.com/Denixzertyux/PythonDataCleaning" target="_blank" rel="noopener noreferrer">Data cleaning CLI <span aria-hidden="true">↗</span></a></h4>
-            <p>A command-line tool for cleaning CSV and Excel datasets with repeatable pandas operations. Separates duplicates for review, fills numeric gaps with column means, and drops rows with remaining non-numeric nulls.</p>
+        </details>
+        <details class="item">
+          <summary>
+            <span class="id mono">DE-02</span>
+            <span class="title">Data cleaning CLI</span>
+            <span class="tags mono"><span>pandas</span></span>
+          </summary>
+          <div class="body">
+            <p>A command-line tool for cleaning CSV and Excel datasets with repeatable pandas operations. It separates duplicate records for review, fills numeric gaps with column means, and removes rows with remaining non-numeric nulls.</p>
+            <p class="flow mono">CSV / Excel → pandas → clean dataset</p>
+            <a class="link" href="https://github.com/Denixzertyux/PythonDataCleaning" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
-          <p class="flow mono">CSV / Excel → pandas → clean dataset</p>
-        </article>
+        </details>
 
-        <h3 class="group mono">Data science</h3>
-        <article class="row">
-          <span class="no mono">03</span>
-          <div class="row-main">
-            <h4><a href="https://github.com/Denixzertyux/DiseaseAnalysisPrediction" target="_blank" rel="noopener noreferrer">Disease analysis &amp; prediction <span aria-hidden="true">↗</span></a></h4>
+        <p class="group mono">Data science</p>
+        <details class="item">
+          <summary>
+            <span class="id mono">DS-02</span>
+            <span class="title">Disease analysis &amp; prediction</span>
+            <span class="tags mono"><span>scikit-learn</span></span>
+          </summary>
+          <div class="body">
             <p>Symptom-based disease prediction with SVM, Gaussian Naive Bayes and Random Forest, combined through majority voting, with RandomOverSampler to address class imbalance.</p>
+            <p class="flow mono">symptoms → classifiers → majority vote</p>
+            <a class="link" href="https://github.com/Denixzertyux/DiseaseAnalysisPrediction" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
-          <p class="flow mono">symptoms → classifiers → majority vote</p>
-        </article>
-        <article class="row">
-          <span class="no mono">04</span>
-          <div class="row-main">
-            <h4><a href="https://github.com/Denixzertyux/HousePredictionAndAnalysis" target="_blank" rel="noopener noreferrer">House price prediction <span aria-hidden="true">↗</span></a></h4>
+        </details>
+        <details class="item">
+          <summary>
+            <span class="id mono">DS-03</span>
+            <span class="title">House price prediction</span>
+            <span class="tags mono"><span>scikit-learn</span><span>Seaborn</span></span>
+          </summary>
+          <div class="body">
             <p>Explores housing features and compares Random Forest, SVR and Gradient Boosting for predicting sale prices, with exploratory plots, one-hot encoding, and evaluation by MAE and MAPE.</p>
+            <p class="flow mono">housing data → encoding → regression → evaluation</p>
+            <a class="link" href="https://github.com/Denixzertyux/HousePredictionAndAnalysis" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
-          <p class="flow mono">housing data → encoding → regression → evaluation</p>
-        </article>
+        </details>
 
-        <h3 class="group mono">Data analysis</h3>
-        <article class="row">
-          <span class="no mono">05</span>
-          <div class="row-main">
-            <h4><a href="https://github.com/Denixzertyux/NetflixDataAnalysis" target="_blank" rel="noopener noreferrer">Netflix content analysis <span aria-hidden="true">↗</span></a></h4>
+        <p class="group mono">Data analysis</p>
+        <details class="item">
+          <summary>
+            <span class="id mono">DA-01</span>
+            <span class="title">Netflix content analysis</span>
+            <span class="tags mono"><span>PostgreSQL</span></span>
+          </summary>
+          <div class="body">
             <p>Explores the Netflix catalog with PostgreSQL: content distribution, common ratings, geographic patterns, the US market, and content categorization.</p>
+            <p class="flow mono">catalog → PostgreSQL → SQL insights</p>
+            <a class="link" href="https://github.com/Denixzertyux/NetflixDataAnalysis" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
-          <p class="flow mono">catalog → PostgreSQL → SQL insights</p>
-        </article>
-        <article class="row">
-          <span class="no mono">06</span>
-          <div class="row-main">
-            <h4><a href="https://github.com/Denixzertyux/SQLRetailProject" target="_blank" rel="noopener noreferrer">Retail sales analysis <span aria-hidden="true">↗</span></a></h4>
+        </details>
+        <details class="item">
+          <summary>
+            <span class="id mono">DA-02</span>
+            <span class="title">Retail sales analysis</span>
+            <span class="tags mono"><span>MySQL</span></span>
+          </summary>
+          <div class="body">
             <p>A sequenced SQL workflow over retail transactions, from database setup and cleaning to customer behavior, product performance, and sales trends.</p>
+            <p class="flow mono">transactions → MySQL → sales analysis</p>
+            <a class="link" href="https://github.com/Denixzertyux/SQLRetailProject" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
-          <p class="flow mono">transactions → MySQL → sales analysis</p>
-        </article>
+        </details>
 
-        <h3 class="group mono">Full-stack</h3>
-        <article class="row">
-          <span class="no mono">07</span>
-          <div class="row-main">
-            <h4><a href="https://github.com/Denixzertyux/EOS_assignment_backend" target="_blank" rel="noopener noreferrer">EOS task management <span aria-hidden="true">↗</span></a></h4>
-            <p>A complete REST application from the EOS IT Services summer school: Spring Boot backend, Angular frontend, with tasks, teams, users, authentication and permission checks. <a class="inline" href="https://github.com/Denixzertyux/EOS_assignment_frontend" target="_blank" rel="noopener noreferrer">Frontend repo ↗</a></p>
+        <p class="group mono">Full-stack</p>
+        <details class="item">
+          <summary>
+            <span class="id mono">FS-01</span>
+            <span class="title">EOS task management</span>
+            <span class="tags mono"><span>Spring Boot</span><span>Angular</span></span>
+          </summary>
+          <div class="body">
+            <p>A complete REST application from the EOS IT Services summer school: a Spring Boot backend and an Angular frontend, with task, team and user management, authentication and permission checks.</p>
+            <p class="flow mono">Angular → REST API → Spring Boot</p>
+            <span class="links">
+              <a class="link" href="https://github.com/Denixzertyux/EOS_assignment_backend" target="_blank" rel="noopener noreferrer">Backend ↗</a>
+              <a class="link" href="https://github.com/Denixzertyux/EOS_assignment_frontend" target="_blank" rel="noopener noreferrer">Frontend ↗</a>
+            </span>
           </div>
-          <p class="flow mono">Angular → REST API → Spring Boot</p>
-        </article>
-        <article class="row">
-          <span class="no mono">08</span>
-          <div class="row-main">
-            <h4><a href="https://github.com/Denixzertyux/FullStackScrapingProject" target="_blank" rel="noopener noreferrer">Scraping &amp; PDF parsing app <span aria-hidden="true">↗</span></a></h4>
-            <p>Scheduled web scraping and PostgreSQL storage behind a Spring Boot API and an Angular interface. Filters duplicate products and extracts structured invoice data from PDFs into CSV.</p>
+        </details>
+        <details class="item">
+          <summary>
+            <span class="id mono">FS-02</span>
+            <span class="title">Scraping &amp; PDF parsing app</span>
+            <span class="tags mono"><span>Spring Boot</span><span>PostgreSQL</span></span>
+          </summary>
+          <div class="body">
+            <p>Scheduled web scraping and PostgreSQL storage behind a Spring Boot API and an Angular interface. It filters duplicate products and extracts structured invoice data from PDFs into downloadable CSV files.</p>
+            <p class="flow mono">web / PDF → Jsoup, PDFBox → PostgreSQL → Angular</p>
+            <a class="link" href="https://github.com/Denixzertyux/FullStackScrapingProject" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
-          <p class="flow mono">web / PDF → parsing → PostgreSQL → Angular</p>
-        </article>
-        <article class="row">
-          <span class="no mono">09</span>
-          <div class="row-main">
-            <h4><a href="https://github.com/Denixzertyux/HospitalManagementSystem" target="_blank" rel="noopener noreferrer">Hospital management API <span aria-hidden="true">↗</span></a></h4>
+        </details>
+        <details class="item">
+          <summary>
+            <span class="id mono">FS-03</span>
+            <span class="title">Hospital management API</span>
+            <span class="tags mono"><span>Spring Boot</span><span>MongoDB</span></span>
+          </summary>
+          <div class="body">
             <p>A Spring Boot REST API on MongoDB Atlas covering patients, appointments, staff, pharmacy inventory, billing, and facility beds.</p>
+            <p class="flow mono">REST API → Spring Boot → MongoDB</p>
+            <a class="link" href="https://github.com/Denixzertyux/HospitalManagementSystem" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
-          <p class="flow mono">REST API → Spring Boot → MongoDB</p>
-        </article>
-      </div>
-    </section>
+        </details>
+      </section>
 
-    <section id="experience" class="frame section" aria-labelledby="exp-title">
-      <header class="section-head">
-        <p class="mono label">§ 2</p>
+      <section id="experience" class="section" aria-labelledby="exp-title">
         <h2 id="exp-title">Experience</h2>
-      </header>
-      <ol class="ledger">
-        <li>
-          <p class="when mono">Jun 2026 — now</p>
-          <div>
-            <h3>Data Engineer Intern <span>Endava</span></h3>
-            <p>Developing Python, SQL and ETL skills through the Dava.X Data &amp; AI program, with practical exercises, mentor collaboration, and exposure to cloud technologies and AI fundamentals.</p>
-          </div>
-          <p class="kind mono">Internship</p>
-        </li>
-        <li>
-          <p class="when mono">Jun — Sep 2026</p>
-          <div>
-            <h3>Full-Stack Development Summer School <span>EOS IT Services</span></h3>
-            <p>Built a complete REST application with Java, Spring Boot, TypeScript and Angular, developing task management features across backend and frontend. <a class="inline" href="https://github.com/Denixzertyux/EOS_assignment_backend" target="_blank" rel="noopener noreferrer">See the code ↗</a></p>
-          </div>
-          <p class="kind mono">Internship</p>
-        </li>
-        <li>
-          <p class="when mono">Dec 2025 — Jun 2026</p>
-          <div>
-            <h3>Python Instructor <span>Hackademy</span></h3>
-            <p>Taught Python to university students from different faculties, from language fundamentals through more advanced concepts, as part of the volunteer Python team.</p>
-          </div>
-          <p class="kind mono">Volunteering</p>
-        </li>
-        <li>
-          <p class="when mono">2024 — 2028</p>
-          <div>
-            <h3>BSc Computer Science (in English) <span>POLITEHNICA University of Bucharest</span></h3>
-            <p>Faculty of Engineering in Foreign Languages (FILS, CTI-E). Expected graduation 2028.</p>
-          </div>
-          <p class="kind mono">Education</p>
-        </li>
-      </ol>
-    </section>
+        <ol class="timeline">
+          <li>
+            <p class="when mono">Jun 2026 – now</p>
+            <div>
+              <h3>Data Engineer Intern <span>Endava</span></h3>
+              <p>Developing Python, SQL and ETL skills through the Dava.X Data &amp; AI program, with practical exercises, mentor collaboration, and exposure to cloud technologies and AI fundamentals.</p>
+            </div>
+          </li>
+          <li>
+            <p class="when mono">Jun – Sep 2026</p>
+            <div>
+              <h3>Full-Stack Development Summer School <span>EOS IT Services</span></h3>
+              <p>Built a complete REST application with Java, Spring Boot, TypeScript and Angular, developing task management features across the backend and frontend.</p>
+            </div>
+          </li>
+          <li>
+            <p class="when mono">Dec 2025 – Jun 2026</p>
+            <div>
+              <h3>Python Instructor <span>Hackademy, volunteer</span></h3>
+              <p>Taught Python to university students from different faculties, from language fundamentals through more advanced concepts.</p>
+            </div>
+          </li>
+          <li>
+            <p class="when mono">2024 – 2028</p>
+            <div>
+              <h3>BSc Computer Science, in English <span>POLITEHNICA University of Bucharest</span></h3>
+              <p>Faculty of Engineering in Foreign Languages (FILS, CTI-E).</p>
+            </div>
+          </li>
+        </ol>
+      </section>
 
-    <section id="about" class="frame section" aria-labelledby="about-title">
-      <header class="section-head">
-        <p class="mono label">§ 3</p>
-        <h2 id="about-title">About</h2>
-      </header>
-      <div class="about">
-        <div class="about-copy">
-          <p class="lede">I’m Denis. Python is at the center of my work, from preparing datasets and building scraping pipelines to experimenting with machine learning.</p>
-          <p>Teaching Python as a volunteer at Hackademy is part of my story too. Alongside the data focus, I build REST APIs and web interfaces with Java, Spring Boot and Angular, skills I developed further at the EOS IT Services summer school.</p>
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div>
+          <h2 id="about-title">About</h2>
+          <p class="big">What draws me to data is the chance to think critically: to examine the evidence, ask better questions, and reach a conclusion I can explain.</p>
+          <p>Python is at the center of my work, from preparing datasets and building scraping pipelines to experimenting with machine learning. Teaching it at Hackademy is part of my story too.</p>
         </div>
-        <div class="specs">
-          <dl class="toolkit">
-            <div><dt class="mono">Python &amp; data</dt><dd>Python, SQL, pandas, NumPy, Matplotlib, Seaborn</dd></div>
-            <div><dt class="mono">Machine learning</dt><dd>scikit-learn, SciPy, TensorFlow, Keras, PyTorch, PCA, Faiss, Grad-CAM</dd></div>
-            <div><dt class="mono">Data processing</dt><dd>ETL, data cleaning, web scraping with Selenium, Beautiful Soup, Requests</dd></div>
-            <div><dt class="mono">Databases</dt><dd>PostgreSQL, MySQL, SQL Server, MongoDB</dd></div>
-            <div><dt class="mono">Web</dt><dd>Java, TypeScript, C++, Spring Boot, Spring Security, Angular, FastAPI, Django</dd></div>
-            <div><dt class="mono">Tools</dt><dd>Git, Linux, Docker Compose, Maven, Jupyter</dd></div>
-          </dl>
-          <dl class="toolkit creds">
-            <div><dt class="mono">Certified</dt><dd>OCI Data Science Professional<br>OCI AI Foundations Associate<br>Cambridge English C2</dd></div>
-            <div><dt class="mono">Languages</dt><dd>Romanian, native<br>English, C2</dd></div>
-          </dl>
+        <dl class="specs">
+          <div><dt class="mono">Python &amp; data</dt><dd>Python, SQL, pandas, NumPy, Matplotlib, Seaborn</dd></div>
+          <div><dt class="mono">Machine learning</dt><dd>scikit-learn, SciPy, TensorFlow, Keras, PyTorch, PCA, Faiss, Grad-CAM</dd></div>
+          <div><dt class="mono">Data processing</dt><dd>ETL, data cleaning, Selenium, Beautiful Soup, Requests</dd></div>
+          <div><dt class="mono">Databases</dt><dd>PostgreSQL, MySQL, SQL Server, MongoDB</dd></div>
+          <div><dt class="mono">Web</dt><dd>Java, TypeScript, C++, Spring Boot, Spring Security, Angular, FastAPI, Django</dd></div>
+          <div><dt class="mono">Tools</dt><dd>Git, Linux, Docker Compose, Maven, Jupyter</dd></div>
+          <div><dt class="mono">Certifications</dt><dd>OCI Data Science Professional, OCI AI Foundations Associate, Cambridge English C2</dd></div>
+          <div><dt class="mono">Languages</dt><dd>Romanian (native), English (C2)</dd></div>
+        </dl>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Looking for a Python or data role. <span>Let’s talk.</span></h2>
+        <div class="actions">
+          <a class="btn primary" href="mailto:nastasedeniscristian45@gmail.com">nastasedeniscristian45@gmail.com</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/denis-nastase-a1867331b/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="btn ghost" href="https://github.com/Denixzertyux" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section id="contact" class="frame contact" aria-labelledby="contact-title">
-      <p class="mono label">§ 4 · Contact</p>
-      <h2 id="contact-title">Have data that needs <em>a pipeline</em>, or a question that needs <em>an answer?</em></h2>
-      <a class="mail" href="mailto:nastasedeniscristian45@gmail.com">nastasedeniscristian45@gmail.com</a>
-      <ul class="elsewhere mono">
-        <li><a href="https://www.linkedin.com/in/denis-nastase-a1867331b/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
-        <li><a href="https://github.com/Denixzertyux" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
-        <li><a href="assets/Denis-Nastase-CV.pdf" download>CV.pdf ↓</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="frame colophon mono">
-    <p>Denis-Cristian Nastase · Bucharest</p>
-    <p>Set in Instrument Serif, Instrument Sans &amp; JetBrains Mono. No framework, no tracking.</p>
-  </footer>
+    <footer class="foot">
+      <span>Denis-Cristian Nastase</span>
+      <span>Bucharest, Romania</span>
+    </footer>
+  </div>
   <script src="script.js" defer></script>
 </body>
 </html>
