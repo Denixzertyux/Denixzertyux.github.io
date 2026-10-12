@@ -120,3 +120,15 @@ h1{font-weight:600;font-size:clamp(44px,7vw,84px);line-height:1;letter-spacing:-
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+
+.points{margin:12px 0 0;padding-left:18px;color:var(--text-2);display:grid;gap:6px;max-width:68ch}
+.points li::marker{color:var(--text-3)}
+
+.query{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:16px;padding:12px 16px;border:1px solid var(--hairline-strong);border-radius:8px;background:var(--s1);color:var(--text-2);font-size:14px}
+.query label{color:var(--text-2)}
+.q-val{display:inline-flex;align-items:center;gap:2px;color:var(--accent)}
+.query select{appearance:none;-webkit-appearance:none;font:inherit;color:var(--text);background:var(--s3);border:1px solid var(--hairline-strong);border-radius:4px;padding:3px 26px 3px 8px;cursor:pointer;min-height:32px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23a3a8b0' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center}
+.query select:hover{border-color:rgba(255,255,255,.24)}
+.rows{margin-left:auto;color:var(--text-3)}
+.item[hidden],.group[hidden]{display:none}
+.panel>.first-visible{border-top:0}

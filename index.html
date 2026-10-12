@@ -44,7 +44,13 @@
             <p class="when mono">Jun 2026 – now</p>
             <div>
               <h3>Data Engineer Intern <span>Endava</span></h3>
-              <p>Developing Python, SQL and ETL skills through the Dava.X Data &amp; AI program, with practical exercises, mentor collaboration, and exposure to cloud technologies and AI fundamentals.</p>
+              <p>Part of the Dava.X Data &amp; AI program, in an Agile team of six interns.</p>
+              <ul class="points">
+                <li>Built ETL workflows in Python and SQL to extract, clean, validate, transform and load datasets, and troubleshot loading and processing issues.</li>
+                <li>Wrote stored procedures and optimized SQL queries on PostgreSQL and Microsoft SQL Server; built reports and dashboards in Power BI and Excel.</li>
+                <li>Used Docker, Jira and GitLab, deployed to AWS, and wrote tests with pytest and unittest.</li>
+                <li>Implemented an AI agent integration with the OpenAI API in Python, automated tasks with Power Automate and Copilot Studio, and trained colleagues on Microsoft Copilot.</li>
+              </ul>
             </div>
           </li>
           <li>
@@ -79,9 +85,14 @@
 
       <section id="work" class="section" aria-labelledby="work-title">
         <h2 id="work-title">Projects</h2>
+        <div class="query mono" hidden>
+          <label for="stack">SELECT * FROM projects WHERE stack =</label>
+          <span class="q-val">'<select id="stack"></select>';</span>
+          <output class="rows" for="stack" aria-live="polite"></output>
+        </div>
         <div class="panel projects">
 
-        <details class="item featured" open>
+        <details data-stack="Python,TensorFlow,FastAPI,Django" class="item featured" open>
           <summary>
             <span class="title">Explainable AI for pneumonia detection</span>
             <span class="tags mono"><span>TensorFlow</span><span>Grad-CAM</span></span>
@@ -94,7 +105,7 @@
         </details>
 
         <p class="group">Data engineering</p>
-        <details class="item">
+        <details data-stack="Python,Selenium,MySQL,TensorFlow,Faiss" class="item">
           <summary>
             <span class="title">Logo similarity pipeline</span>
             <span class="tags mono"><span>Selenium</span><span>MySQL</span><span>Faiss</span></span>
@@ -105,7 +116,7 @@
             <a class="link" href="https://github.com/Denixzertyux/LogosScrapingAndClassifying" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
         </details>
-        <details class="item">
+        <details data-stack="Python,pandas" class="item">
           <summary>
             <span class="title">Data cleaning CLI</span>
             <span class="tags mono"><span>pandas</span></span>
@@ -117,8 +128,20 @@
           </div>
         </details>
 
+        <details data-stack="Rust,MQTT" class="item">
+          <summary>
+            <span class="title">Real-time IoT data pipeline</span>
+            <span class="tags mono"><span>Rust</span><span>MQTT</span></span>
+          </summary>
+          <div class="body">
+            <p>A streaming pipeline that sends sensor readings from STM32 and ESP32 boards as JSON to an MQTT broker, written in Rust. I built a TCP proxy to troubleshoot the data flow between the components.</p>
+            <p class="flow mono">sensors → STM32 / ESP32 → JSON over MQTT → broker</p>
+            <a class="link" href="https://github.com/UPB-PMRust-Students/fils-project-2026-Denixzertyux" target="_blank" rel="noopener noreferrer">Repository ↗</a>
+          </div>
+        </details>
+
         <p class="group">Data science</p>
-        <details class="item">
+        <details data-stack="Python,scikit-learn,pandas" class="item">
           <summary>
             <span class="title">Disease analysis &amp; prediction</span>
             <span class="tags mono"><span>scikit-learn</span></span>
@@ -129,7 +152,7 @@
             <a class="link" href="https://github.com/Denixzertyux/DiseaseAnalysisPrediction" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
         </details>
-        <details class="item">
+        <details data-stack="Python,scikit-learn,Seaborn" class="item">
           <summary>
             <span class="title">House price prediction</span>
             <span class="tags mono"><span>scikit-learn</span><span>Seaborn</span></span>
@@ -142,7 +165,7 @@
         </details>
 
         <p class="group">Data analysis</p>
-        <details class="item">
+        <details data-stack="SQL,PostgreSQL" class="item">
           <summary>
             <span class="title">Netflix content analysis</span>
             <span class="tags mono"><span>PostgreSQL</span></span>
@@ -153,7 +176,7 @@
             <a class="link" href="https://github.com/Denixzertyux/NetflixDataAnalysis" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
         </details>
-        <details class="item">
+        <details data-stack="SQL,MySQL" class="item">
           <summary>
             <span class="title">Retail sales analysis</span>
             <span class="tags mono"><span>MySQL</span></span>
@@ -166,7 +189,7 @@
         </details>
 
         <p class="group">Full-stack</p>
-        <details class="item">
+        <details data-stack="Java,Spring Boot,TypeScript,Angular" class="item">
           <summary>
             <span class="title">EOS task management</span>
             <span class="tags mono"><span>Spring Boot</span><span>Angular</span></span>
@@ -180,7 +203,7 @@
             </span>
           </div>
         </details>
-        <details class="item">
+        <details data-stack="Java,Spring Boot,Angular,PostgreSQL" class="item">
           <summary>
             <span class="title">Scraping &amp; PDF parsing app</span>
             <span class="tags mono"><span>Spring Boot</span><span>PostgreSQL</span></span>
@@ -191,7 +214,7 @@
             <a class="link" href="https://github.com/Denixzertyux/FullStackScrapingProject" target="_blank" rel="noopener noreferrer">Repository ↗</a>
           </div>
         </details>
-        <details class="item">
+        <details data-stack="Java,Spring Boot,MongoDB" class="item">
           <summary>
             <span class="title">Hospital management API</span>
             <span class="tags mono"><span>Spring Boot</span><span>MongoDB</span></span>
