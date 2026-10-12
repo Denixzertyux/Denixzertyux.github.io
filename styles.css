@@ -132,3 +132,11 @@ h1{font-weight:600;font-size:clamp(44px,7vw,84px);line-height:1;letter-spacing:-
 .rows{margin-left:auto;color:var(--text-3)}
 .item[hidden],.group[hidden]{display:none}
 .panel>.first-visible{border-top:0}
+
+.activity{border:1px solid var(--hairline-strong);border-radius:12px;background:var(--s1);padding:20px}
+.cal-scroll{overflow-x:auto;scrollbar-width:thin;container-type:inline-size}
+.cal{--c:clamp(11px,calc((100cqw - 156px) / 53),17px);display:grid;grid-auto-flow:column;grid-template-rows:16px repeat(7,var(--c));grid-auto-columns:var(--c);gap:3px;width:max-content}
+.cal .m{grid-row:1;font:400 11px/16px var(--sans);color:var(--text-3);white-space:nowrap}
+.cal .d{border-radius:2px;background:var(--s3)}
+.cal .l1{background:#2f3466}.cal .l2{background:#454da3}.cal .l3{background:#5f69c8}.cal .l4{background:#8a93ef}
+.cal-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;margin-top:16px;color:var(--text-2);font-size:14px}

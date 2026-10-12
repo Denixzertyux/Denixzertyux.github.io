@@ -33,6 +33,56 @@
   }
 
   if (!('IntersectionObserver' in window)) return;
+
+  const activity = document.getElementById('activity');
+  const cal = activity && activity.querySelector('.cal');
+  if (cal && window.fetch) {
+    fetch('https://github-contributions-api.jogruber.de/v4/Denixzertyux?y=last')
+      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(data => {
+        const days = (data.contributions || []).filter(d => d.date);
+        if (!days.length) return;
+        const total = days.reduce((n, d) => n + d.count, 0);
+        const fmt = new Intl.DateTimeFormat('en', { month: 'short' });
+        const long = new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric' });
+        const first = new Date(days[0].date + 'T00:00:00');
+        const offset = first.getDay();
+        const frag = document.createDocumentFragment();
+        const weeks = Math.ceil((days.length + offset) / 7);
+        let lastMonth = -1;
+        for (let w = 0; w < weeks; w++) {
+          const i = w * 7 - offset;
+          const day = days[Math.max(i, 0)];
+          const month = new Date(day.date + 'T00:00:00').getMonth();
+          if (month !== lastMonth && w < weeks - 2) {
+            const m = document.createElement('span');
+            m.className = 'm';
+            m.style.gridColumn = `${w + 1} / span 3`;
+            m.textContent = fmt.format(new Date(day.date + 'T00:00:00'));
+            frag.append(m);
+            lastMonth = month;
+          }
+        }
+        days.forEach((d, i) => {
+          const cell = document.createElement('span');
+          const pos = i + offset;
+          cell.className = `d l${d.level}`;
+          cell.style.gridColumn = Math.floor(pos / 7) + 1;
+          cell.style.gridRow = (pos % 7) + 2;
+          cell.title = `${d.count} ${d.count === 1 ? 'contribution' : 'contributions'} on ${long.format(new Date(d.date + 'T00:00:00'))}`;
+          frag.append(cell);
+        });
+        cal.append(frag);
+        const label = `${total} contributions on GitHub in the last year`;
+        cal.setAttribute('aria-label', label);
+        activity.querySelector('.cal-total').textContent = label + '.';
+        activity.hidden = false;
+        const scroller = activity.querySelector('.cal-scroll');
+        scroller.scrollLeft = scroller.scrollWidth;
+      })
+      .catch(() => {});
+  }
+
   const links = new Map([...document.querySelectorAll('.top nav a')].map(a => [a.hash.slice(1), a]));
   const spy = new IntersectionObserver(entries => {
     entries.forEach(e => {
